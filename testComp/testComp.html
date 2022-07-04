@@ -1,0 +1,9 @@
+<template>
+    <lightning-card>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" value={pageCount} label="Enter page count" placeholder="type here..." ></lightning-input>
+            <lightning-button variant="brand-outline" label="Check" title="Primary action with lighter look" onclick={changePageCountHandler} class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <c-util_pagination pagecount={pageCount} ></c-util_pagination>
+    </lightning-card>
+</template>

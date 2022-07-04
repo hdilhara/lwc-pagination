@@ -1,0 +1,8 @@
+<template>
+    pagination
+    <lightning-button-group>
+        <template if:true={showPagination} for:each={pagination.pages} for:item="page">
+            <lightning-button key={page.value} disabled={page.isDisabled} onclick={page.handler} label={page.value}></lightning-button>
+        </template>
+    </lightning-button-group>
+</template>
